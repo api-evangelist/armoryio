@@ -1,8 +1,25 @@
 aid: armoryio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/armoryio.png
 name: Armory.io
-description: 'Armory.io is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: devops. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Armory.io was an enterprise continuous delivery and continuous deployment company built
+  around the open-source Spinnaker project. Its products included Armory Continuous Deployment
+  Self-Hosted and Managed (an enterprise Spinnaker distribution), Armory Continuous Deployment-as-a-Service
+  (CDaaS) with a declarative GitOps deployment experience, and the Armory Scale Agent for Spinnaker and
+  Kubernetes. Armory was backed by Insight Partners and was later acquired by Harness; the armory.io
+  website now 301-redirects to harness.io and the CDaaS cloud service, developer portal, and status page
+  are decommissioned, while the documentation site (docs.armory.io) and the Apache-2.0 GitHub organization
+  (github.com/armory) remain live.'
 url: https://raw.githubusercontent.com/api-evangelist/armoryio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Devops
+- Continuous Delivery
+- Continuous Deployment
+- Spinnaker
+- Kubernetes
+- Deployment
+- GitOps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/armoryio-domain-security.yml
 - type: Website
   url: https://www.armory.io/
+- type: Documentation
+  url: https://docs.armory.io/
+- type: GitHubOrganization
+  url: https://github.com/armory
+- type: Packages
+  url: packages/armoryio-packages.yml
+- type: SDKs
+  url: packages/armoryio-packages.yml
+- type: LLMsTxt
+  url: llms/armoryio-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

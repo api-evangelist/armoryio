@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/armory (pkg.go.dev + GitHub org)
+note: >-
+  Armory was acquired by Harness (armory.io now 301-redirects to harness.io) and
+  the CDaaS cloud API/developer portal are decommissioned. The GitHub org
+  github.com/armory remains live (Apache-2.0, 108 repos, Spinnaker tooling). Only
+  genuinely first-party, still-published client libraries / CLI installers are
+  listed here. No package is fabricated.
+packages:
+- language: go
+  registry: pkg.go.dev
+  name: github.com/armory/plank
+  url: https://pkg.go.dev/github.com/armory/plank
+  repo: https://github.com/armory/plank
+  install: go get github.com/armory/plank
+  version: v4.2.3
+  released: '2024-06-26'
+  license: Apache-2.0
+  official: true
+  description: >-
+    Spinnaker SDK for Go — client for Spinnaker microservices (Gate, Orca,
+    Front50) used by Armory's continuous delivery tooling.
+- language: go
+  registry: github
+  name: avm
+  url: https://github.com/armory/avm
+  repo: https://github.com/armory/avm
+  install: See repo release binaries
+  license: Apache-2.0
+  official: true
+  description: >-
+    Armory Version Manager — installer for the Armory CDaaS command-line
+    interface (the CLI binary itself; the command surface is in cli/).
