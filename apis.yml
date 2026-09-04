@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://www.armory.io/', status: 301, note: 'declared website redirects to https://www.harness.io:443/products/continuous-delivery — a different registrable domain (armory.io -> harness.io), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/armoryio.png
 name: Armory.io
 description: 'Armory.io was an enterprise continuous delivery and continuous deployment company built
